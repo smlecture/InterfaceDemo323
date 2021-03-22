@@ -1,6 +1,6 @@
 package com.androidapp.interfaceprograms;
 
-public class BankAccount {
+public class BankAccount implements Measurable {
     private double balance;
     private int accountNumber;
     private static int lastAssignedNumber=1000;
@@ -20,7 +20,7 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public double getBalance() {
+    public double getMeasure() {
         return balance;
     }
 }
