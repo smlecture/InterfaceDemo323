@@ -3,8 +3,12 @@ package com.androidapp.interfaceprograms;
 public class MyInterfaceProg {
     public static void main(String[] args) {
         BankAccount[] accounts = new BankAccount[2];
-        accounts[0] = new BankAccount(0);
-        accounts[1] = new BankAccount(10000);
+//        accounts[0] = new BankAccount(0);
+        accounts[0] = new BankAccount();
+        accounts[0].setBalance(0);
+//        accounts[1] = new BankAccount(10000);
+        accounts[1] = new BankAccount();
+        accounts[1].setBalance(10000);
         System.out.println("Average balance: " + average(accounts));
 
         Country[] countries = new Country[2];
